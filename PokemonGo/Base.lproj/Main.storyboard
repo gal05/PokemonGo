@@ -63,11 +63,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="166" y="127"/>
         </scene>
-        <!--View Controller-->
+        <!--Pokedex View Controller-->
         <scene sceneID="U1x-Rp-5MY">
             <objects>
-                <viewController id="Gza-aZ-6Zd" sceneMemberID="viewController">
+                <viewController id="Gza-aZ-6Zd" customClass="PokedexViewController" customModule="PokemonGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s2W-qI-LtU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,6 +84,9 @@
                                     <constraint firstAttribute="width" constant="50" id="DQc-Yu-fHQ"/>
                                 </constraints>
                                 <state key="normal" image="map"/>
+                                <connections>
+                                    <action selector="mapTapped:" destination="Gza-aZ-6Zd" eventType="touchUpInside" id="22Y-Zi-eju"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,6 +100,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tx5-Ph-FtN"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="bAv-1b-HFS" id="Dyo-Tc-lwW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9V-kt-mH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

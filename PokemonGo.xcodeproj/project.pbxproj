@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86574A5621B1FD2200AFAFED /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86574A5521B1FD2200AFAFED /* PokedexViewController.swift */; };
 		86F194C921B1C74E00050311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F194C821B1C74E00050311 /* AppDelegate.swift */; };
 		86F194CB21B1C74E00050311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F194CA21B1C74E00050311 /* ViewController.swift */; };
 		86F194CE21B1C74E00050311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F194CC21B1C74E00050311 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86574A5521B1FD2200AFAFED /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
 		86F194C521B1C74E00050311 /* PokemonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F194C821B1C74E00050311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86F194CA21B1C74E00050311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				86F194D421B1C74E00050311 /* LaunchScreen.storyboard */,
 				86F194D721B1C74E00050311 /* Info.plist */,
 				86F194CF21B1C74E00050311 /* PokemonGo.xcdatamodeld */,
+				86574A5521B1FD2200AFAFED /* PokedexViewController.swift */,
 			);
 			path = PokemonGo;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86F194CB21B1C74E00050311 /* ViewController.swift in Sources */,
+				86574A5621B1FD2200AFAFED /* PokedexViewController.swift in Sources */,
 				86F194C921B1C74E00050311 /* AppDelegate.swift in Sources */,
 				86F194D121B1C74E00050311 /* PokemonGo.xcdatamodeld in Sources */,
 			);
