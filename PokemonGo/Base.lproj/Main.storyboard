@@ -21,10 +21,23 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TPv-hm-vG8">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd9-UM-954">
+                                <rect key="frame" x="315" y="40" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Pjj-Q0-3DU"/>
+                                    <constraint firstAttribute="width" constant="50" id="cIF-dF-gD6"/>
+                                </constraints>
+                                <state key="normal" image="compass"/>
+                                <connections>
+                                    <action selector="centrarTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n8Q-nS-U9f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bd9-UM-954" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2ja-H1-uVF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TPv-hm-vG8" secondAttribute="trailing" id="KaU-yZ-N33"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bd9-UM-954" secondAttribute="trailing" constant="10" id="Sk2-4y-FQu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TPv-hm-vG8" secondAttribute="bottom" id="Usd-PM-rOC"/>
                             <constraint firstItem="TPv-hm-vG8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yuc-oW-3hK"/>
                             <constraint firstItem="TPv-hm-vG8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fjk-xN-Awv"/>
@@ -39,4 +52,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="compass" width="512" height="512"/>
+    </resources>
 </document>

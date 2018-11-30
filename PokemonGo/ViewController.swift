@@ -14,7 +14,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
     
     var ubicacion = CLLocationManager()
-   
+   var conActualizacion = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,13 +27,28 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         }
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("Ubicacion Localizada")
+        if(conActualizacion<1){
+            let region = MKCoordinateRegionMakeWithDistance(ubicacion.location!.coordinate, 1000, 1000)
+            mapView.setRegion(region, animated: true)
+            conActualizacion += 1
+        }else{
+            ubicacion.stopUpdatingLocation()
+        }
+
+        
+    }
+    @IBAction func centrarTapped(_ sender: Any) {
+        if let coord  = ubicacion.location?.coordinate{
+            let region = MKCoordinateRegionMakeWithDistance(coord, 1000, 1000)
+            mapView.setRegion(region, animated: true)
+            conActualizacion += 1
+        }
     }
     
-    override func didReceiveMemoryWarning() {
+    /*override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+    }*/
 
 
 }
