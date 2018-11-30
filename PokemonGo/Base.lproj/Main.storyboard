@@ -39,6 +39,9 @@
                                     <constraint firstAttribute="height" constant="50" id="dhs-SH-9Rc"/>
                                 </constraints>
                                 <state key="normal" image="pokeball"/>
+                                <connections>
+                                    <segue destination="Gza-aZ-6Zd" kind="presentation" id="etV-yk-hLk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
